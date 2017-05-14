@@ -62,7 +62,7 @@ public class TestRunner {
 		toStation = driver.findElement(By.xpath(".//*[@id='jpform:toStation']"));
 		toStation.sendKeys("SECUNDERABAD JN - SC");
 		jrnyDate = driver.findElement(By.xpath(".//*[@id='jpform:journeyDateInputDate']"));
-		jrnyDate.sendKeys("08-05-2017");
+		jrnyDate.sendKeys("15-05-2017");
 		submit = driver.findElement(By.id("jpform:jpsubmit"));
 		submit.click();
 		tatkal = driver.findElement(By.xpath(".//*[@id='qcbd']/table/tbody/tr/td[5]/input"));
@@ -75,8 +75,8 @@ public class TestRunner {
 		sleeper.click();
 		Thread.sleep(5000);
 		booknow = driver.findElement(By.xpath(".//*[@id='17013-SL-TQ-0']"));
-		System.out.println("Booking Now");
 		booknow.click();
+		System.out.println("Booking Now");
 		Thread.sleep(5000);
 		passengerName = driver.findElement(By.xpath(".//*[@id='addPassengerForm:psdetail:0:p1652270205']"));
 		passengerName.sendKeys("Bhupesh Yedla");
